@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  background-color: #222;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px;
+}
+
+.App-body {
+  background-color: #222;
+  padding: 11px;
+  color: white;
+
+}
+.App-body h4{
+    color: #f56337;
+   }
+
+@media (max-width: 360px) {
+  
+  .App-body {
+       margin-left: -19px;
+       margin-top: -13px;
+       
+   }
+  .App-logo {
+       height: 30px;
+   }
+  .App-body h2, h1{
+    font-size: 15px;
+   }
+   
+}
+
+.App-power {
+  margin-top: -11px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.board {
+  display: flex;
+  width: 350px;
+  height: 360px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.square {
+  box-sizing: border-box;
+  border: 5px solid #61dafb;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: #f56337;
+  text-shadow: 1px 3px 0px #000;
+}
+
+body {
+  margin-left: -30px;
+  background-color: #222;
+}
+
+.turn {
+  margin-bottom: 5px;
+}
+
+.label {
+    color: rgba(7, 4, 93, 0.97);
+}
+.gameOver{
+  text-align: center;
+  margin-left: 37px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: default;
+}
+.gameReset{
+  text-align: center;
+  margin-left: 37px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.gameReset:hover {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.gameRestart {
+  text-align: center;
+  margin-left: 37px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.gameRestart:hover {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.label {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.fadeEffect {
+  box-sizing: border-box;
+  border: 5px solid yellow;
+  background-color: #f56236;
+  pointer-events: none;
+  text-shadow: 1px 3px 0px #000;
+}
