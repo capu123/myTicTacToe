@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
@@ -15,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "stop": "pkill --signal SIGINT simplereact2"
+    "stop": "pkill --signal SIGINT simplereact2",
+    "deploy": "npm run build&&gh-pages -d build"
   }
 }
